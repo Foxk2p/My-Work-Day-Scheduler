@@ -2,7 +2,7 @@ let timer = moment().format('LLLL');
 console.log(timer)
 document.getElementById('timeD').innerHTML = `<h6>${timer}</h6>
 `
-
+// 9h with functional local storage-------------------------------------------
 document.getElementById('btn9h').addEventListener('click', () => {
   event.preventDefault()
   localStorage.setItem('inputH9', document.getElementById('inputH9').value)
@@ -13,6 +13,10 @@ document.getElementById('btn9h').addEventListener('click', () => {
   document.getElementById('inputH9').value = ''
 })
 
+document.getElementById('dispText9').textContent = `
+  ${localStorage.getItem('inputH9')}
+  `
+// Testing local storage -----------------------------------------
 // localStorage.setItem('dispText9')
 
 // if (localStorage.getItem('inputH9')) {
@@ -20,10 +24,6 @@ document.getElementById('btn9h').addEventListener('click', () => {
 //   ${localStorage.getItem('inputH9')}
 //   `
 // }
-
-document.getElementById('dispText9').textContent = `
-  ${localStorage.getItem('inputH9')}
-  `
 
 // document.getElementById('LS').textContent = `hello
 
