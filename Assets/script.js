@@ -1,5 +1,7 @@
-// let timer = moment().format('LLLL');
-// console.log(timer)
+let timer = moment().format('LLLL');
+console.log(timer)
+document.getElementById('timeD').innerHTML = `<h6>${timer}</h6>
+`
 
 document.getElementById('btn9h').addEventListener('click', () => {
   event.preventDefault()
