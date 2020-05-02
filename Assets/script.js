@@ -13,12 +13,26 @@ document.getElementById('btn9h').addEventListener('click', () => {
   document.getElementById('inputH9').value = ''
 })
 
+// localStorage.setItem('dispText9')
+
+// if (localStorage.getItem('inputH9')) {
+// document.getElementById('dispText9').textContent = `
+//   ${localStorage.getItem('inputH9')}
+//   `
+// }
+
+document.getElementById('dispText9').textContent = `
+  ${localStorage.getItem('inputH9')}
+  `
+
+// document.getElementById('LS').textContent = `hello
 
 // if (localStorage.getItem('inputH9')) {
 //   document.getElementById('dispText9').textContent.innerHTML = `
 //     <h6>${document.getElementById('inputH9').value}</h6>
 //   `
 // }
+
 
 document.getElementById('btn10h').addEventListener('click', () => {
   event.preventDefault()
